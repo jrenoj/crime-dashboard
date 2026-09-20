@@ -648,6 +648,11 @@ def cross_filter(area_click, crime_click, selected_areas, selected_crimes):
     return no_update, toggle(selected_crimes, label), None, None
 
 
+import os
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 8050)),
+        debug=False
+    )
