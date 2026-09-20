@@ -239,8 +239,8 @@ app.layout = html.Div(
             children=html.Div(
                 className="rail-inner",
                 children=[
-                    html.H1("LA crime analytics", className="brand"),
-                    html.P("LAPD reported incidents, 2020–2024", className="brand-sub"),
+                    html.H1("LA Crime Analytics", className="brand"),
+                    html.P("LAPD Reported Uncidents, 2020–2024", className="brand-sub"),
                     field("Year", dcc.Dropdown(
                         id="year-filter",
                         options=[{"label": str(y), "value": y} for y in years],
