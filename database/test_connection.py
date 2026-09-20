@@ -1,4 +1,4 @@
-from database import query_database
+from dashboard.database import query_database
 
 result = query_database("""
     SELECT COUNT(*) AS total_records
